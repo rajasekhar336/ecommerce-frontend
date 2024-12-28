@@ -5,7 +5,7 @@ pipeline {
         AWS_REGION = 'us-east-1' // e.g., us-east-1
         ECR_REPOSITORY = 'ecommerce/frontend'
         IMAGE_TAG = "${env.BUILD_ID}" // or use a specific tag
-        KUBECONFIG = credentials('kubeconfig-credential-id') // Replace with your Kubernetes credentials ID
+         // Replace with your Kubernetes credentials ID
         AWS_ACCOUNT_ID = '075884725528'
         NAMESPACE = 'myapp'
     }
